@@ -182,7 +182,7 @@ app.put('/videos/:id', (req: RequestWithParams<{ id: number }>, res: Response) =
 
     videoDb[videoIndex] = updatedVideo;
 
-    res.status(204).send(); // Sending a 204 response with no content
+    res.status(204).send();
 })
 app.delete('/videos/:id', (req: RequestWithParams<{ id: number }>, res: Response) => {
     const id: number = +req.params.id;
